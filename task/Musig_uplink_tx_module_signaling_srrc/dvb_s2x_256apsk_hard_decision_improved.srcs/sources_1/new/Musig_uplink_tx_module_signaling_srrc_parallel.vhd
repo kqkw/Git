@@ -162,7 +162,7 @@ process(i_clk,i_rst)begin       --8位计数器
      if(i_rst='1')then
         cnt_tmp4 <= (others=>'0');
      elsif(i_clk'event and i_clk='1')then
-        if(i_en = '1' and en_d1 ='0') then
+        if(i_en = '1' and en_d1 ='0') then --是在i_en的上升沿执行，否则如果i_en一直高电平，那么cnt_tmp4会一直被重置1
             cnt_tmp4 <= "00000001";
         elsif(cnt_tmp4 >0)then
              if(cnt_tmp4=63)then
@@ -178,7 +178,7 @@ end process;
      if(i_rst='1')then
         insert_entet <= '0';
      elsif(i_clk'event and i_clk='1')then
-        if(cnt_tmp4=15 or cnt_tmp4=31 or cnt_tmp4=47 or cnt_tmp4=63 )then
+        if(cnt_tmp4=15 or cnt_tmp4=31 or cnt_tmp4=47 or cnt_tmp4=63 )then  --cnt_tmp4每间隔15次计数，在第16次就会将insert_entet置为1
             insert_entet <= '1';
         else
             insert_entet <= '0';
@@ -192,16 +192,16 @@ end process;
         cnt_tmp33 <= (others=>'0');
      elsif (i_clk='1' and i_clk'event) then
         if(sym_regen_d1 = '1'and sym_regen_d2='0') then --信号刚刚从低跳变为高电平（也就是开始插入一个新数据）
-            cnt_tmp33 <= "0001";
+            cnt_tmp33 <= "0001"; --插入新数据在上一个高电平，延迟一拍也就是说这次只需要14拍将cnt_tmp33置为0，那么此时的cnt_tmp33开始赋值要为1
         elsif(cnt_tmp33 >0)then
-             if(cnt_tmp33=15)then
+             if(cnt_tmp33=15)then        --cnt_tmp33每经过15次为一个循环
                 cnt_tmp33 <= "0000";  
              else
                 cnt_tmp33 <= cnt_tmp33 + "0001";
              end if;
         end if;
      end if;
-  end process;
+  end process;  
 --------------------------------------------------
       
 cnt_gen  : process(i_clk,i_rst)
@@ -238,7 +238,7 @@ data_flow: process(i_rst,i_clk)     --使能有效时，数据向高位移动一位
                 end loop;
                 sym_reg(0) <= insert_zero_data;    -- 最低位存入新数据
             else
-                sym_reg<=sym_reg;
+                sym_reg<=sym_reg; --数据不变
             end if;    
         end if;
     end process;
@@ -310,9 +310,9 @@ mult_data_sel1 : process(i_clk,i_rst)
          if(i_rst='1')then
             multOut1 <= (others=>'0');
          elsif(i_clk'event and i_clk='1')then
-            if(multData1 /= 0 and multData1(11) = '1')then
+            if(multData1 /= 0 and multData1(11) = '1')then  --输入数据是负数，输出用系数的相反数
                 multOut1 <= 0-multCoef1;  
-            elsif(multData1 /= 0 and multData1(11) = '0')then
+            elsif(multData1 /= 0 and multData1(11) = '0')then  --输入数据是正数，输出用系数
                 multOut1 <= multCoef1;
             elsif(multData1 = 0)then
                 multOut1 <= (others=>'0');
@@ -340,10 +340,10 @@ mult_data_sel1 : process(i_clk,i_rst)
             sumOut <= (others=>'0');
             entmp4  := '0';
         elsif (i_clk='1' and i_clk'event) then
-            entmp4 := en_tmp or sym_regen_d1;
+            entmp4 := en_tmp or sym_regen_d1; 
             if(cnt_tmp33 >= 1 and cnt_tmp33<=14) then
                 sumOut <= sumOut + sxt(multOut1,18);
-            elsif(cnt_tmp33 = 0 and entmp4='1') then
+            elsif(cnt_tmp33 = 0 and entmp4='1') then  --sym_regen_d1在上一拍刚插入新数据，这一拍送到sumOut，在同一时刻cnt_tmp33变为1
                 sumOut <= sxt(multOut1,18); -- 8.12
             elsif(cnt_tmp33 = 0 and entmp4='0') then
                 sumOut <= (others=>'0');
