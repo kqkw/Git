@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug 22 10:22:13 2025
+# Process ID: 10264
+# Current directory: E:/2025.7_learning/task/Musig_uplink_tx_module_signaling_srrc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6032 E:\2025.7_learning\task\Musig_uplink_tx_module_signaling_srrc\dvb_s2x_256apsk_hard_decision_improved.xpr
+# Log file: E:/2025.7_learning/task/Musig_uplink_tx_module_signaling_srrc/vivado.log
+# Journal file: E:/2025.7_learning/task/Musig_uplink_tx_module_signaling_srrc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/2025.7_learning/task/Musig_uplink_tx_module_signaling_srrc/dvb_s2x_256apsk_hard_decision_improved.xpr
+update_compile_order -fileset sources_1

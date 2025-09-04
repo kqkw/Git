@@ -1,0 +1,32 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: 测试1: 验证最小输入值(0x800)处理
+Time: 120 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试2: 验证最大输入值(0x7FF)处理
+Time: 335 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试1: 验证最小输入值(0x800)处理
+Time: 665 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试2: 验证最大输入值(0x7FF)处理
+Time: 875 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试1: 验证最小输入值(0x800)处理
+Time: 1205 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试2: 验证最大输入值(0x7FF)处理
+Time: 1415 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试1: 验证最小输入值(0x800)处理
+Time: 1745 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试2: 验证最大输入值(0x7FF)处理
+Time: 1955 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试1: 验证最小输入值(0x800)处理
+Time: 2285 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试2: 验证最大输入值(0x7FF)处理
+Time: 2495 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试1: 验证最小输入值(0x800)处理
+Time: 2825 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试2: 验证最大输入值(0x7FF)处理
+Time: 3035 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试1: 验证最小输入值(0x800)处理
+Time: 3365 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试2: 验证最大输入值(0x7FF)处理
+Time: 3575 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd
+Note: 测试1: 验证最小输入值(0x800)处理
+Time: 3905 ns  Iteration: 0  Process: /tb_Musig_uplink_tx_module_signaling_srrc/stim_proc  File: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd

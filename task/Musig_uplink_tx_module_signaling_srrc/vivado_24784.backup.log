@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Aug 12 17:20:20 2025
+# Process ID: 24784
+# Current directory: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22172 E:\2025.7_learning\dvb_s2x_256apsk_hard_decision_improved\dvb_s2x_256apsk_hard_decision_improved.xpr
+# Log file: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/vivado.log
+# Journal file: E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/2025.7_learning/dvb_s2x_256apsk_hard_decision_improved/dvb_s2x_256apsk_hard_decision_improved.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.105 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 12 23:16:25 2025...

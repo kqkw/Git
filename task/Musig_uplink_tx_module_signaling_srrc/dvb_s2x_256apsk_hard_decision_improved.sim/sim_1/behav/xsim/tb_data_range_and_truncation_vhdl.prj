@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../dvb_s2x_256apsk_hard_decision_improved.srcs/sources_1/new/dvb_s2x_256apsk_hard_decision_improved.vhd" \
+"../../../../dvb_s2x_256apsk_hard_decision_improved.srcs/sim_1/new/tb_srrc_filter.vhd" \
+
+# Do not sort compile order
+nosort

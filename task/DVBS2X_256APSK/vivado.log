@@ -1,0 +1,1098 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Aug 14 10:10:23 2025
+# Process ID: 22964
+# Current directory: E:/2025.7_learning/DVBS2X_256APSK_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31156 E:\2025.7_learning\DVBS2X_256APSK_1\DVBS2X_256APSK_1.xpr
+# Log file: E:/2025.7_learning/DVBS2X_256APSK_1/vivado.log
+# Journal file: E:/2025.7_learning/DVBS2X_256APSK_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dvb_s2x_256apsk_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_dvb_s2x_256apsk_decoder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_dvb_s2x_256apsk_decoder'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xelab -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.dvb_s2x_256apsk_decoder [dvb_s2x_256apsk_decoder_default]
+ERROR: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Compiling architecture behavioral of entity xil_defaultlib.tb_dvb_s2x_256apsk_decoder
+Built simulation snapshot tb_dvb_s2x_256apsk_decoder_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim/xsim.dir/tb_dvb_s2x_256apsk_decoder_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Aug 14 10:18:38 2025...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1139.734 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1139.734 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dvb_s2x_256apsk_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_dvb_s2x_256apsk_decoder_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xelab -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_dvb_s2x_256apsk_decoder_behav -key {Behavioral:sim_1:Functional:tb_dvb_s2x_256apsk_decoder} -tclbatch {tb_dvb_s2x_256apsk_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_dvb_s2x_256apsk_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ========================================
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 75 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 105 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 120 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 150 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 165 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 165 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 165 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 165 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 165 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 240 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 270 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 285 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 315 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 330 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 330 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 330 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 330 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 330 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 405 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 435 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 450 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 480 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 495 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 495 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 495 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 495 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 495 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 570 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 600 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 615 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 645 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 660 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 660 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 660 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 660 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 660 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 735 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 765 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 780 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 810 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 825 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 825 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 825 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 825 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 825 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 900 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 930 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 945 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 975 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 990 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 990 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 990 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 990 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 990 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_dvb_s2x_256apsk_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1139.734 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dvb_s2x_256apsk_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_dvb_s2x_256apsk_decoder_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xelab -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_dvb_s2x_256apsk_decoder_behav -key {Behavioral:sim_1:Functional:tb_dvb_s2x_256apsk_decoder} -tclbatch {tb_dvb_s2x_256apsk_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_dvb_s2x_256apsk_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ========================================
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 75 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 105 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 120 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 150 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 165 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 165 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 165 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 165 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 165 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 240 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 270 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 285 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 315 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 330 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 330 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 330 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 330 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 330 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 405 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 435 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 450 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 480 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 495 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 495 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 495 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 495 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 495 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 570 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 600 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 615 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 645 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 660 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 660 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 660 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 660 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 660 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 735 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 765 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 780 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 810 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 825 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 825 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 825 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 825 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 825 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 900 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 930 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 945 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 975 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 990 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 990 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 990 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 990 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 990 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_dvb_s2x_256apsk_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2053.793 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dvb_s2x_256apsk_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_dvb_s2x_256apsk_decoder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_dvb_s2x_256apsk_decoder'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xelab -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.dvb_s2x_256apsk_decoder [dvb_s2x_256apsk_decoder_default]
+ERROR: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Compiling architecture behavioral of entity xil_defaultlib.tb_dvb_s2x_256apsk_decoder
+Built simulation snapshot tb_dvb_s2x_256apsk_decoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dvb_s2x_256apsk_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_dvb_s2x_256apsk_decoder_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xelab -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_dvb_s2x_256apsk_decoder_behav -key {Behavioral:sim_1:Functional:tb_dvb_s2x_256apsk_decoder} -tclbatch {tb_dvb_s2x_256apsk_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_dvb_s2x_256apsk_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ========================================
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 75 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 80 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 95 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 100 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 190 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 195 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 210 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 215 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 305 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 310 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 325 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 330 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 420 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 425 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 440 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 445 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 535 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 540 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 555 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 560 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 650 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 655 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 670 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 675 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 765 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 770 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 785 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 790 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 880 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 885 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 900 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 905 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 995 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error:   错误: 输出无效信号未激活!
+Time: 1 us  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_dvb_s2x_256apsk_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2053.793 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dvb_s2x_256apsk_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_dvb_s2x_256apsk_decoder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_dvb_s2x_256apsk_decoder'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xelab -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.dvb_s2x_256apsk_decoder [dvb_s2x_256apsk_decoder_default]
+ERROR: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Compiling architecture behavioral of entity xil_defaultlib.tb_dvb_s2x_256apsk_decoder
+Built simulation snapshot tb_dvb_s2x_256apsk_decoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dvb_s2x_256apsk_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_dvb_s2x_256apsk_decoder_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xelab -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_dvb_s2x_256apsk_decoder_behav -key {Behavioral:sim_1:Functional:tb_dvb_s2x_256apsk_decoder} -tclbatch {tb_dvb_s2x_256apsk_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_dvb_s2x_256apsk_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ========================================
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 75 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 80 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 95 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 100 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 190 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 195 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 210 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 215 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 305 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 310 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 325 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 330 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 420 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 425 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 440 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 445 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 535 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 540 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 555 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 560 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 650 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 655 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 670 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 675 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 765 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 770 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 785 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 790 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 880 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 885 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 900 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 905 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 995 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Error: ERROR: Output valid signal not asserted!
+Time: 1 us  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_dvb_s2x_256apsk_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2053.793 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dvb_s2x_256apsk_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_dvb_s2x_256apsk_decoder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_dvb_s2x_256apsk_decoder'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xelab -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.dvb_s2x_256apsk_decoder [dvb_s2x_256apsk_decoder_default]
+ERROR: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Compiling architecture behavioral of entity xil_defaultlib.tb_dvb_s2x_256apsk_decoder
+Built simulation snapshot tb_dvb_s2x_256apsk_decoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_dvb_s2x_256apsk_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_dvb_s2x_256apsk_decoder_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+"xelab -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ba4bd07b7daa44108d225472a7c42449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_dvb_s2x_256apsk_decoder_behav xil_defaultlib.tb_dvb_s2x_256apsk_decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 2147483648 is out of target constraint range 0 to 2147483647 [E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sources_1/new/dvb_s2x_256apsk_decoder.vhd:228]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_dvb_s2x_256apsk_decoder_behav -key {Behavioral:sim_1:Functional:tb_dvb_s2x_256apsk_decoder} -tclbatch {tb_dvb_s2x_256apsk_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_dvb_s2x_256apsk_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: ========================================
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 0 ps  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 75 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 95 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 115 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 190 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 210 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 230 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 305 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 325 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 345 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 420 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 440 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 460 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 535 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 555 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 575 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 650 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 670 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 690 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 765 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 785 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 805 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 880 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 2: Boundary test 3    Note:   输入: I=60000, Q=0, 期望环=2
+Time: 900 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: DVB-S2X 256APSK 硬判决模块仿真开始
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 时钟频率: 200MHz (周期: 5ns)
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试向量数量: 2
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: ========================================
+Time: 920 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+Note: 测试 1: Outer ring 135 deg Note:   输入: I=-34755, Q=34755, 期望环=2
+Time: 995 ns  Iteration: 0  Process: /tb_dvb_s2x_256apsk_decoder/stim_process  File: E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.srcs/sim_1/new/tb_dvb_s2x_256apsk_decoder.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_dvb_s2x_256apsk_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2155.031 ; gain = 0.000

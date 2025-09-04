@@ -1,0 +1,18 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 00b68db154044891bfa04202f21302b5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Musig_uplink_tx_module_signaling_srrc_behav xil_defaultlib.tb_Musig_uplink_tx_module_signaling_srrc -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Musig_uplink_tx_module_signaling_srrc [musig_uplink_tx_module_signaling...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_musig_uplink_tx_module_signal...
+Built simulation snapshot tb_Musig_uplink_tx_module_signaling_srrc_behav
