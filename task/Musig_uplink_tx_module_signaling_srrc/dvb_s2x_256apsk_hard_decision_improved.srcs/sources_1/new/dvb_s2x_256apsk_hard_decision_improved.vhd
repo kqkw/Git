@@ -2,18 +2,17 @@
 -- Company: 
 -- Engineer:  
 -- 
--- Create Date: 2025/04/14 10:39:09
+-- Create Date: 
 -- Design Name: 
--- Module Name: Musig_uplink_tx_module_signaling_srrc_parallel - Behavioral
+-- Module Name: Musig_uplink_tx_module_signaling_srrc_parallel 
 -- Project Name: 
--- Target Devices: XCVU13P-FHGB2104
+-- Target Devices: 
 -- Tool Versions: 
 -- Description: 高吞吐率并行SRRC滤波器 - 所有乘法运算并行执行
 -- 
 -- Dependencies: 
 -- 
 -- Revision:
--- Revision 1.0 - 并行化
 -- Additional Comments:
 -- 采用并行乘法累加结构，所有15个乘法运算同时进行
 ----------------------------------------------------------------------------------
@@ -195,7 +194,7 @@ begin
                     -- 零值情况
                     mult_results(i) <= (others=>'0');
                 end if;
-            end loop;
+            end loop;              
         end if;
     end process;
 

@@ -14,7 +14,6 @@
 -- 
 -- Revision:
 -- Revision 1.0 - Generic Design with configurable parameters
--- Additional Comments:
 -- 支持更大的滤波器阶数，提高通用性和性能
 ----------------------------------------------------------------------------------
 

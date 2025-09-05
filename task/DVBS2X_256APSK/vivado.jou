@@ -2,31 +2,13 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Aug 14 10:10:23 2025
-# Process ID: 22964
-# Current directory: E:/2025.7_learning/DVBS2X_256APSK_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31156 E:\2025.7_learning\DVBS2X_256APSK_1\DVBS2X_256APSK_1.xpr
-# Log file: E:/2025.7_learning/DVBS2X_256APSK_1/vivado.log
-# Journal file: E:/2025.7_learning/DVBS2X_256APSK_1\vivado.jou
+# Start of session at: Thu Sep  4 20:41:00 2025
+# Process ID: 34960
+# Current directory: E:/Git/task/DVBS2X_256APSK
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31472 E:\Git\task\DVBS2X_256APSK\DVBS2X_256APSK_1.xpr
+# Log file: E:/Git/task/DVBS2X_256APSK/vivado.log
+# Journal file: E:/Git/task/DVBS2X_256APSK\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project E:/2025.7_learning/DVBS2X_256APSK_1/DVBS2X_256APSK_1.xpr
+open_project E:/Git/task/DVBS2X_256APSK/DVBS2X_256APSK_1.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-launch_simulation
-source tb_dvb_s2x_256apsk_decoder.tcl
-close_sim
-launch_simulation
-source tb_dvb_s2x_256apsk_decoder.tcl
-relaunch_sim
-close_sim
-launch_simulation
-source tb_dvb_s2x_256apsk_decoder.tcl
-close_sim
-launch_simulation
-launch_simulation
-source tb_dvb_s2x_256apsk_decoder.tcl
-close_sim
-launch_simulation
-launch_simulation
-source tb_dvb_s2x_256apsk_decoder.tcl
